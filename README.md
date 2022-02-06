@@ -61,7 +61,7 @@
 ## Для решения поставленных задач, использовал:
 
 - Node.js, express, multer, MongoDB, prettier - на сервере
-- React, react-router-dom, react-hooks, redux, redux-thunk, redux-logger - на клиенте
+- React, react-router-dom, react-hooks, redux, redux-thunk, redux-logger, dayjs - на клиенте
 
 ---
 
