@@ -257,3 +257,7 @@
 .button_79:not(:disabled):active {
   transform: translateY(.125rem);
 }
+.cart{
+  margin-left: 1580px;
+
+}

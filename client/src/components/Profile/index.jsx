@@ -9,6 +9,7 @@ import { loadSubscriptions } from "../../redux/features/subscription";
 import { loadTrainers } from "../../redux/features/trainer";
 import Timer from "./Timer";
 import { loadAllCarts, loadCartItems } from "../../redux/features/cart";
+import Cart from "../Shop/Cart";
 
 const Profile = () => {
   const dispatch = useDispatch();
@@ -67,6 +68,9 @@ const Profile = () => {
     <div className={styles.profile__container}>
       <div className={styles.header}>
         <div className={styles.header__name}>Мой профиль</div>
+        <div className={styles.cart}>
+          <Cart />
+        </div>
         <hr />
         <button className={styles.button_79}>
           <NavLink to={"/"}>На главную</NavLink>
