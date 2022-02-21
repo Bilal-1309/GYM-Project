@@ -10,6 +10,7 @@ import { loadTrainers } from "../../redux/features/trainer";
 import Timer from "./Timer";
 import { loadAllCarts, loadCartItems } from "../../redux/features/cart";
 import Cart from "../Shop/Cart";
+import logo from "../../assets/logo-white.png";
 
 const Profile = () => {
   const dispatch = useDispatch();
@@ -67,16 +68,19 @@ const Profile = () => {
   return (
     <div className={styles.profile__container}>
       <div className={styles.header}>
+        <div className={styles.profile__header__logo}><NavLink to={"/"}>
+          <img
+              className={styles.profile__header__logo}
+              src={logo}
+              alt="logo"
+          />
+        </NavLink></div>
         <div className={styles.header__name}>Мой профиль</div>
-        <div className={styles.cart}>
+        <div className={styles.profile__header__cart}>
           <Cart />
         </div>
-        <hr />
-        <button className={styles.button_79}>
-          <NavLink to={"/"}>На главную</NavLink>
-        </button>
       </div>
-
+      <hr/>
       <div className={styles.profile__info__row}>
         <div className={styles.profile__info__user}>
           {userProfile.img ? (
@@ -115,16 +119,10 @@ const Profile = () => {
               Имя: {userProfile.name}
             </div>
             <div className={styles.profile__userData}>
-              Возраст: {userProfile.age}
-            </div>
-            <div className={styles.profile__userData}>
               Вес: {userProfile.weight}
             </div>
             <div className={styles.profile__userData}>
               Почта: {userProfile.email}
-            </div>
-            <div className={styles.profile__userData}>
-              Телефон: {userProfile.phone}
             </div>
           </div>
         </div>

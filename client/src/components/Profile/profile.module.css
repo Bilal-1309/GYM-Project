@@ -17,6 +17,8 @@
 .header {
   text-align: center;
   color: aliceblue;
+  display: flex;
+  justify-content: space-between;
 }
 .header__name {
   font-size: 50px;
@@ -100,13 +102,14 @@
 
 .profile__info__user {
   min-width: 300px;
-  background-color: #4e4f52;
+  background-color:  #0d0d0f;
   border-radius: 30px;
   position: relative;
 }
 
 .profile__userInfo__div {
-  background-color: #5f5f63;
+  height: 150px;
+  background-color: #0d0d0f;
   margin-top: 15px;
   padding-bottom: 15px;
   border-radius: 0px 0px 30px 30px;
@@ -115,7 +118,8 @@
 
 .profile__userData {
   padding-top: 15px;
-  color: aliceblue;
+  color: #fcfcfc;
+  font-size: 20px;
 }
 
 .footer {
@@ -257,7 +261,15 @@
 .button_79:not(:disabled):active {
   transform: translateY(.125rem);
 }
-.cart{
-  margin-left: 1580px;
-
+.profile__header__cart{
+  margin: 0;
+  padding: 0;
+}
+.profile__header__logo {
+  width: 65px;
+  height: 55px;
+  margin-bottom: 20px;
+}
+hr{
+  margin-top: 10px;
 }
