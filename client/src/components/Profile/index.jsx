@@ -88,10 +88,12 @@ const Profile = () => {
               <img width={200} src={`/${userProfile.img}`} alt="avatar" />
             </div>
           ) : (
-            <img
-              src="https://avatars.mds.yandex.net/get-pdb/1996600/d1725ec1-41d3-4b2c-ab24-91ec603557bf/s375"
-              alt=""
-            />
+             <div className={styles.profile__image__div}>
+              <img width={200}
+               src="https://avatars.mds.yandex.net/get-pdb/1996600/d1725ec1-41d3-4b2c-ab24-91ec603557bf/s375"
+               alt="avatar"
+              />
+             </div>
           )}
 
           <div className={styles.input__wrapper}>

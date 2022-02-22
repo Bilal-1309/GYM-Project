@@ -262,14 +262,11 @@
   transform: translateY(.125rem);
 }
 .profile__header__cart{
-  margin: 0;
+  margin-right: 12px;
   padding: 0;
 }
 .profile__header__logo {
   width: 65px;
   height: 55px;
   margin-bottom: 20px;
-}
-hr{
-  margin-top: 10px;
 }
