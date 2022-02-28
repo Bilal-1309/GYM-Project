@@ -155,18 +155,14 @@ const Profile = () => {
             </figure>
           ) : null}
           {trainerId ? (
-            <div className={stylesT.cart}>
-              <div className={stylesT.block_cart}>
-                <div className={stylesT.image}>
-                  <img src={`/${trainerId.img}`} alt="" />
-                </div>
-                <div className={stylesT.info}>
-                  <h3>Имя: {trainerId.name}</h3>
-                  <p>{trainerId.description}</p>
-                  <p className={stylesT.star}>★ {trainerId.rating}</p>
-                </div>
-              </div>
-            </div>
+            <figure className={stylesS.cart} key={trainerId._id}>
+              <img src={`/${trainerId.img}`} alt=""/>
+              <figcaption>
+                <h2 className={stylesS.cart__price}>{trainerId.name}</h2>
+                <p>{trainerId.description}</p>
+                <h1 className={styles.cart__rating}>★{trainerId.rating}</h1>
+              </figcaption>
+            </figure>
           ) : null}
         </div>
       ) : null}
